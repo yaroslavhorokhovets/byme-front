@@ -1,0 +1,39 @@
+.form-buttons {
+  margin-top: 24px;
+
+  @media (min-width: 768px) {
+    margin-top: 32px;
+  }
+
+  .btn {
+    width: auto;
+    margin: 0 16px;
+  }
+}
+
+.form-half {
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-group {
+    @media (min-width: 1024px) {
+      width: 50%;
+      margin-bottom: 16px;
+    }
+    
+    &:first-child {
+      @media (min-width: 1024px) {
+        margin-right: 16px;
+      }
+    }
+
+    &:last-child {
+      @media (min-width: 1024px) {
+        margin-left: 16px;
+      }
+    }
+  }
+}

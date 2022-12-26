@@ -1,0 +1,77 @@
+.help {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+}
+
+.help__form,
+.help__info {
+  margin-bottom: 24px;
+  @media (min-width: 1024px) {
+    width: calc(50% - 24px);
+    margin: 0 12px 0;
+  }
+}
+
+.help__info-logo {
+  width: 100%;
+  height: 320px;
+  @media (min-width: 1024px) {
+    height: 320px;
+  }
+  @media (min-width: 1200px) {
+    height: 384px;
+  }
+}
+
+.help__info-location,
+.help__info-phone,
+.help__info-mail {
+  svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+  }
+}
+
+.help .form-group {
+  @media (min-width: 1024px) {
+    margin-bottom: 24px;
+  }
+}
+
+.help .form-label {
+}
+
+.help .form-value {
+  position: relative;
+  
+  svg {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 20px;
+    height: auto;
+
+    @media (min-width: 1024px) {
+      top: 14px;
+      left: 12px;
+      width: 24px;
+    }
+  }
+  
+  input {
+    padding-left: 42px;
+  }
+}
+
+.help .form-control {
+}
+
+.help__button .btn {
+  width: auto;
+  margin: 0 16px;
+}

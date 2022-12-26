@@ -1,0 +1,230 @@
+.main-page--photo {
+  .content--white .content__inner {
+    padding: 20px;
+    
+    @media (min-width: 1024px) {
+      padding: 32px;
+    }
+  }
+}
+.photo__content-inner {
+  width: 100%;
+}
+
+.photo__item {
+  margin-bottom: 32px;
+  overflow: hidden;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.photo__item-head {
+  padding: 12px 24px;
+  border-radius: 12px 12px 0 0;
+  color: $c-white;
+  background-color: $c-primary;
+  cursor: pointer;
+  transition: $transition;
+}
+
+.photo__item-head.open {
+  border-radius: 12px;
+  color: $c-black;
+  background-color: $c-white;
+}
+
+.photo__item-arrow {
+  color: $c-white;
+  transform: rotate(-180deg);
+  transition: $transition;
+  
+  svg {
+    width: 24px;
+    height: auto;
+    pointer-events: none;
+  }
+  
+  .open & {
+    color: $c-black;
+    transform: rotate(0);
+  }
+}
+
+.photo__item-body {
+  max-height: 0;
+  overflow: hidden;
+  background-color: $c-white;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+
+.photo__item-body.collapsed {
+  height: auto;
+  max-height: 9999px;
+  transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+}
+
+.photo__item-body-inner {
+}
+
+.photo__item-check-all {
+  padding: 16px;
+  border-bottom: $border;
+
+  @media (min-width: 768px) {
+    padding: 24px;
+  }
+}
+
+.photo__item-cards {
+  margin: 0 -12px;
+}
+
+.photo__item-card {
+  width: calc(100% / 2 - 24px);
+  margin: 0 12px 24px;
+  
+  @media (min-width: 768px) {
+    width: calc(100% / 4 - 24px);
+    margin: 0 12px 24px;
+  }
+}
+
+.photo__item-card-img {
+  height: 100px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    height: 183px;
+    margin-bottom: 15px;
+  }
+}
+
+.photo__item-card-body {
+  button {
+    margin: 0 10px;
+  }
+}
+
+//category heading 
+.photo__category-actions {
+  margin: 0 -5px;
+  
+  button {
+    min-width: 100px;
+    margin: 0 5px 15px;
+
+    @media (min-width: 768px) {
+      min-width: 110px;
+    }
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.photo__category-filter {
+  overflow: hidden;
+  margin: 0 -8px
+}
+
+.photo__action-filters,
+.photo__category-filter ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0 20px;
+  background-color: $c-white;
+
+  @media (min-width: 768px) {
+    background-color: $c-input-bg;
+  }
+  
+  @media (min-width: 1024px) {
+    padding: 0 64px;
+  }
+}
+
+.photo__action-filters li,
+.photo__category-filter li {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.4px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  padding: 0 12px;
+  
+  margin: 0 8px 8px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: $c-menu-bg;
+    color: $c-primary;
+    border-radius: 40px;
+  }
+}
+
+.photo__action-filters li.active,
+.photo__category-filter li.active {
+  background-color: $c-menu-bg;
+  color: $c-primary;
+  border-radius: 40px;
+}
+
+.photo__category-heading {
+  display: block;
+  padding: 32px 20px;
+  @media (min-width: 768px) {
+    background-color: $c-input-bg;
+  }
+  @media (min-width: 1024px) {
+    padding: 32px 64px;
+    display: flex;
+  }
+}
+
+.photo__category-title {
+  margin-bottom: 24px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
+
+.photo__item-card .form-group__checkbox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+.photo__category-content {
+  display: block;
+  padding: 0;
+  background-color: $c-white;
+
+  @media (min-width: 768px) {
+    display: flex;
+    padding: 24px 32px;
+    background-color: $c-input-bg;
+  }
+  @media (min-width: 1024px) {
+    padding: 0 32px 32px;
+  }
+}
+
+.photo__category-content-inner {
+  width: 100%;
+  padding: 0 20px;
+  @media (min-width: 1024px) {
+    padding: 32px;
+  }
+}

@@ -1,0 +1,15 @@
+
+.main-page {
+  .toast-success {
+    padding: 8px 15px 8px 50px !important;
+  }
+
+  #toast-container>.toast-success {
+  }
+
+  .toast-close-button {
+    position: absolute !important;
+    right: 8px !important;
+    top: 8px !important;
+  }
+}

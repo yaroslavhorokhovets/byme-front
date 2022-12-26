@@ -1,0 +1,9 @@
+.content--tutorial-video {
+  .content__inner {
+    padding: 0 32px;
+
+    @media (min-width: 768px) {
+      padding: 0;
+    }
+  }
+}

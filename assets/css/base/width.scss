@@ -1,0 +1,16 @@
+// Defined max width 100 - 1440
+@for $i from 100 through 1440 {
+  .mw#{$i} {
+    width: 100%;
+    max-width: $i + px;
+    margin: auto;
+  }
+}
+
+.mw-100 {
+  max-width: 100% !important;
+}
+
+.w100 {
+  width: 100%;
+}

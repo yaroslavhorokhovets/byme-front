@@ -1,0 +1,13 @@
+.form-control {
+  padding: 12px;
+  border: $border;
+  border-radius: 12px;
+  background-color: $c-input-bg;
+  @media (min-width: 1024px) {
+    height: 48px;
+  }
+}
+
+textarea.form-control {
+  resize: none;
+}

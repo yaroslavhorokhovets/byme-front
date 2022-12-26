@@ -1,0 +1,173 @@
+.notice__title {
+  margin-bottom: 24px;
+}
+.notice__form {
+  margin-bottom: 48px;
+  
+  @media (min-width: 1400px) {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  
+  .form-date-value {
+    display: block;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    .input-time {
+      margin-bottom: 24px;
+      @media (min-width: 768px) {
+        margin-right: 12px;
+        margin-bottom: 0;
+      }
+    }
+    .input-datetime {
+      margin-bottom: 24px;
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .form-value input, 
+  .form-value textarea {
+    background-color: $c-white;
+  }
+  
+  .form-group {
+    display: block;
+    
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    label {
+      @media (min-width: 768px) {
+        width: 100px;
+        margin-right: 20px;
+      }
+    }
+    .form-date-value,
+    .form-value {
+      @media (min-width: 768px) {
+        width: calc(100% - 100px);
+      }
+    }
+  }
+}
+
+
+.post-history__title {
+  margin-bottom: 24px;
+}
+.post-history__table {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.post-history__head,
+.post-history__row {
+  display: none;
+  
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $c-table-bg;
+  }
+}
+
+.post-history__row {
+  display: block;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $c-border;
+  background-color: transparent;
+
+  @media (min-width: 1024px) { 
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  &:hover {
+    background-color: rgba($c-table-bg, 0.5);
+  }
+}
+
+.post-history__column {
+  padding-bottom: 5px;
+  @media (min-width: 1024px) {
+    padding: 12px;
+  }
+  
+  .label {
+    color: $c-neutrals;
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+  
+  &.col-second {
+    @media (min-width: 1024px) {
+      width: 275px;
+      text-align: center;
+    }
+  }
+  
+  &.col-date {
+    @media (min-width: 1024px) {
+      width: 135px;
+    }
+  }
+  
+  &.col-contents {
+    @media (min-width: 1024px) {
+      width: calc(100% - 550px);
+    }
+  }
+  
+  &.col-action {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+      justify-content: flex-end;
+      width: 150px;
+    }
+  }
+}
+
+.post-history__head {
+  .post-history__column {
+    @include table-cell;
+    @include fw-500;
+    color: $c-neutrals-4;
+  }
+}
+
+.post-history__body {
+  .post-history__column {
+    @include table-cell;
+    @include fw-700;
+    color: $c-neutrals-2;
+  }
+}
+
+.post-history__edit,
+.post-history__delete {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  svg {
+    width: 24px;
+    height: auto;
+    margin: 0 10px;
+  }
+}

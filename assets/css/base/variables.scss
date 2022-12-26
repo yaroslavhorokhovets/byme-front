@@ -1,0 +1,88 @@
+// body bg
+$c-background: #E5E5E5;
+$c-input-bg: #F8F8FA;
+
+$c-table-bg: #F4F5F6;
+
+$c-second: #00BDCB;
+$c-primary: #E25039;
+$c-price: #E25039;
+$c-neutrals: #777E90;
+$c-neutrals-2: #23262F;
+$c-neutrals-4: #777E90;
+$c-neutrals-5: #B1B5C3;
+$c-neutrals-7: #F4F5F6;
+$c-menu-bg: #FCEBED;
+$c-report-alert: rgba(255, 160, 0, 0.1);
+
+$c-chart-blue: #B3E5FB;
+$c-chart-orange: #FFD0BC;
+$c-chart-blue-50: #C4CBE8;
+// Colors
+$c-blue: #007bff;
+$c-indigo: #6610f2;
+$c-purple: #6f42c1;
+$c-pink: #e83e8c;
+$c-red: #dc3545;
+$c-orange: #fd7e14;
+$c-yellow: #ffc107;
+$c-green: #28a745;
+$c-teal: #20c997;
+$c-cyan: #17a2b8;
+
+$c-black: #000;
+$c-white: #fff;
+$c-gray: #6c757d;
+$c-gray-dark: #343a40;
+
+$c-secondary: #DD425A;
+$c-success: #28a745;
+$c-info: #17a2b8;
+$c-warning: #ffc107;
+$c-danger: #dc3545;
+$c-light: #f8f9fa;
+$c-dark: #343a40;
+
+$c-pay: #79ccc4;
+$c-muted: #999999;
+$c-button-text: #888888;
+$c-accept: #2e67d1;
+$c-button: #3D3D41;
+$c-disabled: #E0E0E0;
+$c-border: #E6E8EC;
+$c-button-hover: #888888;
+
+$c-cod-gray: #111111;
+$c-tuna: #3D3D41;
+$c-shark: #212529;
+$c-dove-gray:#6B6B6B;
+
+// linear gradient
+$c-gray-linear-gradient: linear-gradient(270deg, $c-black 0%, $c-border 100%);
+$c-loading: linear-gradient(180deg, rgba(224, 224, 224, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%);
+
+// Box shadow
+$box-shadow-small: 2px 2px 5px rgba(58, 70, 92, 0.1);
+$box-shadow-medium: 5px 5px 10px rgba(58, 70, 92, 0.1);
+$box-shadow-large : 10px 10px 20px rgba(58, 70, 92, 0.1);
+$box-shadow-large-25 : 10px 10px 20px rgba(58, 70, 92, 0.25);
+
+// Border
+$border: 1px solid rgba($c-border, 1);
+$border-black: 1px solid rgba($c-black, 1);
+$border-white: 1px solid rgba($c-white, 1);
+$border-red: 1px solid rgba($c-red, 1);
+
+/* Transitions */
+$duration: 0.25s;
+$speed: 0.2s;
+$ease: ease-in-out;
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+$transition: all 0.5s ease-in-out;
+$transition-025: all 0.25s ease-in-out;
+$transition-cubic: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+$transition-default: $duration $ease;
+
+/* display */
+$sidebar-width: 300px;

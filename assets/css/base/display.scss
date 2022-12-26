@@ -1,0 +1,83 @@
+/* defer:start */
+body {
+  font-family: $font-m-plus;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: $c-neutrals-2;
+  background-color: $c-input-bg;
+}
+
+.main-page {
+  padding-top: 0;
+  background-color: $c-white;
+
+  @media (min-width: 1024px) {
+    padding-top: 0;
+    background-color: transparent;
+  }
+}
+
+.main-page--dashboard {
+  padding-top: 0;
+}
+
+.main-page--login {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $c-background;
+  }
+}
+
+.main-page__layout {
+  display: block;
+  padding: 50px 0;
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: stretch;
+    min-height: 600px;
+  }
+}
+
+.main-page__layout--full {
+  width: 100%;
+  min-height: 650px;
+  padding: 20px 0 50px;
+  
+  @media (min-width: 768px) {
+    padding: 50px 0;
+  }
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.static {
+  position: static;
+}

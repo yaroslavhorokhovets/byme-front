@@ -1,0 +1,44 @@
+//common image
+.image--initial,
+.image--cover,
+.image--contain {
+  .image__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+.image--initial {
+  background-size: initial;
+  .image__img {
+    object-fit: initial;
+  }
+}
+
+.image--cover {
+  background-size: cover;
+  .image__img {
+    object-fit: cover;
+  }
+}
+.image--contain {
+  background-size: contain;
+  .image__img {
+    object-fit: contain;
+  }
+}
+
+.ratio {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+  }
+}
+.ro-1::before {
+  padding-top: 100%;
+}

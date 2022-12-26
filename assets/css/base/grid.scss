@@ -1,0 +1,236 @@
+.grid  {
+  display: block;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0 -20px;
+  }
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 2%);
+  transition: all 0.25s ease-in-out;
+
+  @media (min-width: 1024px) {
+    width: calc(100% / 2 - 40px);
+    margin: 0 20px 40px;
+  }
+
+  @media (min-width: 1200px) {
+    width: calc(100% / 3 - 40px);
+    margin: 0 20px 40px;
+  }
+
+  @media (min-width: 1440px) {
+    width: calc(100% / 4 - 40px);
+    margin: 0 20px 40px;
+  }
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  }
+}
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+  height: 250px;
+  transition: all 0.5s linear;
+
+  @media (min-width: 1024px) {
+    height: 230px;
+  }
+}
+
+.card figure {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  vertical-align: top;
+  margin: 0;
+
+  @media (min-width: 1024px) {
+    height: 215px;
+  }
+
+  figcaption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: table;
+    transition: all 0.25s ease-in-out;
+  }
+
+  &:hover {
+    figcaption {
+      background: rgba(255,255,255,0.3);
+    }
+    .card__image {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+}
+
+.card__body {
+  padding: 15px;
+}
+
+.card__title {
+  margin-bottom: 5px;
+  
+  @media (min-width: 768px) {
+    margin-bottom: 7px;
+  }
+}
+
+.card__price {
+  margin-bottom: 0;
+}
+
+.card__action {
+  padding: 0 15px 15px;
+}
+
+.card__icon {
+  cursor: pointer;
+  
+  svg {
+    width: 40px;
+    height: auto;
+    margin-right: 20px;
+    
+    path.circle {
+      fill: transparent;
+    }
+
+    path.cart {
+      fill: #212529;
+    }
+  }
+  
+  &:hover {
+    svg {
+      path.circle {
+        fill: #FCEBED;
+      }
+      
+      path.cart {
+        fill: #E25039;
+      }
+    }
+  }
+}
+
+.card--shopping {
+  width: 100%;
+  margin:  0 0 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .card__inner {
+    padding: 24px;
+  }
+
+  .card__image-wrapper {
+    width: 144px;
+    height: 144px;
+    margin: 0 24px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  figure {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card__body {
+    width: calc(100% - 220px);
+    padding: 0;
+  }
+
+  .card__price {
+    margin-bottom: 32px;
+    color: $c-neutrals-4;
+  }
+
+  .card__action {
+    padding: 0;
+  }
+
+  .card__input-qty {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: $border;
+    border-radius: 10px;
+    height: 32px;
+    max-width: 144px;
+    padding: 0 20px;
+
+    @media (min-width: 1024px) {
+      height: 48px;
+    }
+
+    input {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      width: calc(100% - 36px);
+      border: none;
+      text-align: center;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 18px;
+      height: 18px;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+    }
+
+    button > svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

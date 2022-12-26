@@ -1,0 +1,286 @@
+.login__block h4 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: normal;
+  
+  @media (min-width: 1024px) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.login__form h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: normal;
+  
+  @media (min-width: 1024px) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+.page__title,
+.page-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.photo__category-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.document__title,
+.video-guide__title {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.report__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+.total-report__number {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: normal;
+
+  @media (min-width: 1024px) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+.popup__title {
+  font-weight: 700;
+  font-size: 20px;
+  @media (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.notice__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.post-history__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+@mixin table-cell {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+@mixin fw-500 {
+  font-weight: 500;
+}
+
+@mixin fw-700 {
+  font-weight: 700;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  
+}
+
+.text-success,
+.text-danger {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+}
+
+@mixin fz-10 {
+  font-size: 10px;
+  line-height: 150%;
+}
+
+.fz-10 {
+  @include fz-10;
+}
+
+@mixin fz-12 {
+  font-size: 12px;
+  line-height: 150%;
+}
+
+.fz-12 {
+  @include fz-12;
+}
+
+@mixin fz-14 {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.fz-14 {
+  @include fz-14;
+}
+
+@mixin fz-16 {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.fz-16 {
+  @include fz-16;
+}
+
+@mixin fz-18 {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.fz-18 {
+  @include fz-18;
+}
+
+@mixin fz-20 {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.fz-20 {
+  @include fz-20;
+}
+
+@mixin fz-24 {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.fz-24 {
+  @include fz-24;
+}
+
+@mixin fz-30 {
+  font-size: 30px;
+  line-height: 150%;
+}
+
+.fz-30 {
+  @include fz-30;
+}
+
+@mixin fz-32 {
+  font-size: 32px;
+  line-height: 150%;
+}
+
+.fz-32 {
+  @include fz-32;
+}
+
+@mixin fz-34 {
+  font-size: 34px;
+  line-height: 150%;
+}
+
+.fz-34 {
+  @include fz-34;
+}
+
+@mixin fz-40 {
+  font-size: 40px;
+  line-height: 150%;
+}
+
+.fz-40 {
+  @include fz-40;
+}
+
+@mixin fz-42 {
+  font-size: 42px;
+  line-height: 150%;
+}
+
+.fz-42 {
+  @include fz-42;
+}
+
+@mixin fz-48 {
+  font-size: 48px;
+  line-height: 150%;
+}
+
+.fz-48 {
+  @include fz-48;
+}
+
+@mixin fz-60 {
+  font-size: 60px;
+  line-height: 150%;
+}
+
+.fz-60 {
+  @include fz-60;
+}
+
+@mixin fz-64 {
+  font-size: 64px;
+  line-height: 150%;
+}
+
+.fz-64 {
+  @include fz-64;
+}
+
+.p-large {
+  @include fz-20;
+
+  @media (min-width: 1024px) {
+    @include fz-24;
+  }
+}
+
+.p-medium {
+  @include fz-16;
+
+  @media (min-width: 1024px) {
+    @include fz-18;
+  }
+}
+
+.p-small {
+  @include fz-14;
+
+  @media (min-width: 1024px) {
+    @include fz-16;
+  }
+}
+
+.p-x-small {
+  @include fz-12;
+
+  @media (min-width: 1024px) {
+    @include fz-14;
+  }
+}
+
+.p-xx-small {
+  @include fz-10;
+
+  @media (min-width: 1024px) {
+    @include fz-12;
+  }
+}

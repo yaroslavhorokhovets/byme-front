@@ -1,0 +1,84 @@
+.account__form {
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  .form-label {
+    @media (min-width: 1024px) {
+      width: 200px;
+      margin-right: 24px;
+    }
+  }
+  
+  .form-text {
+    @media (min-width: 1024px) {
+      width: 200px;
+      margin-right: 24px;
+    }
+    
+    .form-text__option {
+      margin-right: 10px;
+      margin-bottom: 5px;
+    }
+  }
+  
+  .form-value {
+    @media (min-width: 1024px) {
+      width: calc(100% - 448px);
+    }
+
+    input {
+      background-color: transparent;
+    }
+  }
+
+  .form-group__price {
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .form-label {
+      @media (min-width: 1024px) {
+        width: 200px;
+        margin-right: 24px;
+      }
+    }
+
+    .form-group {
+      @media (min-width: 1024px) {
+        display: block;
+        width: calc(100% - 224px);
+      }
+    }
+
+    .form-value {
+      @media (min-width: 1024px) {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 -6px;
+      }
+
+      input {
+        margin-bottom: 1rem;
+        @media (min-width: 1024px) {
+          width: calc(100% / 3);
+          margin: 0 6px;
+        }
+      }
+    }
+  }
+}

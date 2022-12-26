@@ -1,0 +1,144 @@
+button {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+button .ripple{
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+}
+
+@keyframes ripple{
+  to{
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.btn-primary:focus {
+  background-color: transparent;
+  border-color: transparent;
+  //box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.btn-gradient {
+  color: $c-white;
+  /* fallback for old browsers */
+  background: #fccb90;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #E25039, #d8363a);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #E25039, #d8363a);
+}
+
+.btn {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  vertical-align: bottom;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  min-width: 110px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 12px;
+  //box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+  transition: all 0.25s ease-in-out;
+  
+  @media (min-width: 1024px) {
+    font-size: 16px;
+    line-height: 24px;
+    height: 48px;
+  }
+  
+  &:hover {
+    color: #fff;
+    //box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 10%);
+  }
+}
+
+.btn-default {
+  font-weight: 600;
+  border: $border;
+  box-shadow: none;
+  &:hover {
+    color: #000;
+  }
+}
+
+.btn-outline-danger {
+  border: 1px solid #FCEBED;
+  border-radius: 12px;
+  box-shadow: none;
+  outline: 0;
+}
+
+.btn-cancel {
+  color: #000;
+  background: #fff;
+  //box-shadow: 0 2px 5px 0 rgb(0 0 0 / 0%), 0 2px 10px 0 rgb(0 0 0 / 0%);
+  
+  &:hover {
+    color: #000;
+  }
+}
+
+.btn--icon {
+  box-shadow: none;
+
+  svg {
+    width: 18px;
+    height: auto;
+    margin-right: 10px;
+
+    @media (min-width: 1024px) {
+      width: 20px;
+    }
+
+    path {
+      transition: all 0.25s ease-in-out;
+    }
+  }
+
+  &:hover {
+    box-shadow: none;
+    color: $c-primary;
+    border-color: $c-primary;
+
+    svg path {
+      fill: $c-primary;
+    }
+  }
+}
+
+.btn--small {
+  font-size: 14px;
+  line-height: 22px;
+  height: 32px;
+  min-width: 110px;
+}
+
+.btn--shadow {
+  //box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.btn--no-shadow {
+  box-shadow: none;
+}
+
+.btn-cancel {
+  border-color: transparent;
+  
+  &:hover {
+    color: $c-primary;
+  }
+}

@@ -1,0 +1,66 @@
+.setting-login__title {
+  margin-bottom: 24px;
+  
+  @media (min-width: 1024px) {
+    margin-bottom: 36px;
+  }
+}
+
+.settings__form-submit {
+  margin: 24px 0;
+
+  @media (min-width: 1024px) {
+    margin: 36px 0;
+  }
+  
+  button {
+    width: 100%;
+    @media (min-width: 768px) {
+      width: auto;
+    }
+  }
+}
+
+.setting-password__title {
+  margin-bottom: 24px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 36px;
+  }
+}
+
+.setting-login__form ,
+.setting-password__form {
+  width: 100%;
+  
+  @media (min-width: 1024px) {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  
+  .form-label {
+    @media (min-width: 1024px) {
+      width: 200px;
+      margin-right: 24px;
+    }
+  }
+
+  .form-value {
+    @media (min-width: 1024px) {
+      width: calc(100% - 224px);
+    }
+  }
+}

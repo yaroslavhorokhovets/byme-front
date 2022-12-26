@@ -1,0 +1,56 @@
+/* defer:start */
+.align-l { text-align: left; }
+.align-c { text-align: center; }
+.align-r { text-align: right; }
+.align-m { vertical-align: middle; }
+.align-t { vertical-align: top; }
+.align-b { vertical-align: baseline; }
+
+/* Styles */
+.italic {
+  font-style: italic;
+}
+
+.light {
+  font-weight: 100;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.bolder {
+  font-weight: 900;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.decoration--none {
+  text-decoration: none;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+.word-break {
+  word-break: break-word;
+}
+/* defer:end */

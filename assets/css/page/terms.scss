@@ -1,0 +1,33 @@
+.terms {
+  &:hover {
+    .terms__actions {
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+}
+
+.terms__actions {
+  margin-bottom: 24px;
+  opacity: 0;
+  z-index: -1;
+  
+  @media (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+  
+  button {
+    margin: 0 8px;
+  }
+}
+
+.quill {
+  display: none;
+}
+.quill.is-active {
+  display: block;
+}
+
+.terms__html.is-active {
+  display: none;
+}

@@ -1,0 +1,55 @@
+.chart-report {
+  margin-bottom: 32px;
+  border-radius: 24px;
+  overflow: hidden;
+  cursor: pointer;
+  
+  @media (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 32px;
+  }
+  
+  &:hover {
+    text-decoration: none;
+    text-transform: none;
+  }
+}
+
+.chart-report__inner {
+  padding: 24px;
+
+  @media (min-width: 768px) {
+    padding: 16px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 24px;
+  }
+}
+
+.chart-report__heading {
+  margin-bottom: 15px;
+  svg {
+    width: 96px;
+    height: auto;
+
+    @media (min-width: 768px) {
+      width: 70px;
+    }
+
+    @media (min-width: 1024px) {
+      width: 96px;
+    }
+  }
+}
+
+.chart-report__content {
+  color: $c-neutrals;
+  p {
+    margin-bottom: 0;
+    color: $c-neutrals;
+  }
+}

@@ -1,0 +1,175 @@
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login__container {
+  @media (min-width: 1440px) {
+  }
+}
+
+.login__inner {
+  display: block;
+  
+  @media (min-width: 768px) {
+    display: flex;
+    margin: 0 -20px;
+  }
+  @media (min-width: 1024px) {
+    margin: 0 -40px;
+  }
+}
+
+.login__block {
+  display: none;
+  width: 100%;
+  
+  @media (min-width: 768px) {
+    display: block;
+    width: 50%;
+    margin: 0 20px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0 40px;
+  }
+  
+  @media (min-width: 1200px) {
+    max-width: 670px;
+  }
+}
+
+.login__block-logo {
+  height: 180px;
+}
+
+.login__block-img {
+  height: 150px;
+
+  @media (min-width: 768px) {
+    height: 300px;
+  }
+}
+
+.login__form {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    margin: 0 20px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0 40px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 448px;
+  }
+}
+
+.login__form-inner {
+  background-color: $c-white;
+  
+  @media (min-width: 768px) {
+    padding: 30px;
+    border-radius: 24px;
+  }
+  
+  @media (min-width: 1024px) {
+    padding: 48px;
+  }
+}
+
+.login__form-logo {
+  height: 100px;
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    display: none;
+    height: 141px;
+    margin-bottom: 0;
+  }
+}
+
+.login__form-block {
+  .form-group {
+    position: relative;
+  }
+  .form-group svg {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    width: 20px;
+    height: auto;
+    
+    @media (min-width: 1024px) {
+      top: 43px;
+      width: 24px;
+    }
+  }
+  .form-group .form-control {
+    padding-left: 35px;
+    @media (min-width: 1024px) {
+      padding-left: 45px;
+    }
+  }
+}
+
+.login__form-submit {
+  button {
+    margin-bottom: 15px;
+  }
+}
+
+.login--account-recovery {
+  .login__form-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn {
+    width: calc(50% - 20px);
+    margin: 0 10px;
+    
+    &:first-child {
+      font-weight: 700;
+    }
+    
+    &:last-child {
+      min-width: 140px;
+    }
+  }
+}
+
+.random__images {
+  width: 100%;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  @media (min-width: 1024px) {
+    height: auto;
+  }
+}
+
+.random__image {
+  @media (min-width: 768px) {
+    width: 100px;
+    height: 100px;
+    margin: 1px;
+  }
+  @media (min-width: 1024px) {
+    width: 130px;
+    height: 130px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 161px;
+    height: 161px;
+  }
+}

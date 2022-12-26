@@ -1,0 +1,48 @@
+.total-reports {
+  margin: 0 -8px;
+
+  @media (min-width: 1024px) {
+    margin: 0 -16px;
+  }
+}
+
+.total-report {
+  width: calc(100%/2 - 16px);
+  margin: 0 8px 16px;
+  background: $c-white;
+  border-radius: 24px;
+  
+  @media (min-width: 1024px) {
+    width: calc(100%/2 - 32px);
+    margin: 0 16px 32px;
+  }
+}
+
+.total-report__inner {
+  padding: 24px;
+}
+
+.total-report__heading {
+  margin-bottom: 15px;
+}
+
+.total-report__number {
+}
+
+.total-report__list {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: $border;
+}
+
+.total-report__see-more {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: $c-second;
+  
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+}

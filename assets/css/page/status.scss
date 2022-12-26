@@ -1,0 +1,297 @@
+.status__title {
+  margin-bottom: 24px;
+}
+.status__form {
+  margin-bottom: 48px;
+  
+  @media (min-width: 1400px) {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+  
+  .form-date-value {
+    display: block;
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    .input-time {
+      margin-bottom: 24px;
+      @media (min-width: 768px) {
+        margin-right: 12px;
+        margin-bottom: 0;
+      }
+    }
+    .input-datetime {
+      margin-bottom: 24px;
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .form-value input, 
+  .form-value textarea {
+    background-color: $c-white;
+  }
+  
+  .form-group {
+    display: block;
+    
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    label {
+      @media (min-width: 768px) {
+        width: 100px;
+        margin-right: 20px;
+      }
+    }
+    .form-date-value,
+    .form-value {
+      @media (min-width: 768px) {
+        width: calc(100% - 100px);
+      }
+    }
+  }
+}
+
+// operation log
+.operation-log {
+  margin-bottom: 32px;
+  @media (min-width: 1024px) {
+    margin-bottom: 64px;
+  }
+}
+.operation-log__filters {
+  select {
+    height: 32px;
+    margin: 0 10px;
+    padding: 4px 8px;
+    background-color: $c-white;
+    border: $border;
+    border-radius: 8px;
+  }
+}
+
+.operation-log__heading {
+  margin-bottom: 24px;
+}
+
+.operation-log__table {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.operation-log__head,
+.operation-log__row {
+  display: none;
+  
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $c-table-bg;
+  }
+}
+
+.operation-log__row {
+  display: block;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $c-border;
+  background-color: transparent;
+
+  @media (min-width: 1024px) { 
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  &:hover {
+    background-color: rgba($c-table-bg, 0.5);
+  }
+}
+
+.operation-log__column {
+  padding-bottom: 5px;
+  @media (min-width: 1024px) {
+    padding: 12px;
+  }
+  
+  .label {
+    color: $c-neutrals;
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+  
+  &.col-id {
+    @media (min-width: 1024px) {
+      width: 265px;
+    }
+    @media (min-width: 1400px) {
+      width: 365px;
+    }
+  }
+  
+  &.col-date,
+  &.col-time,
+  &.col-tools {
+    @media (min-width: 1024px) {
+      width: 130px;
+    }
+
+    @media (min-width: 1400px) {
+      width: 200px;
+    }
+  }
+  
+  &.col-details {
+    @media (min-width: 1024px) {
+      width: calc(100% - 655px);
+    }
+    @media (min-width: 1024px) {
+      width: calc(100% - 965px);
+    }
+  }
+}
+
+.operation-log__head {
+  .operation-log__column {
+    @include table-cell;
+    @include fw-500;
+    color: $c-neutrals-4;
+  }
+}
+
+.operation-log__body {
+  .operation-log__column {
+    @include table-cell;
+    @include fw-700;
+    color: $c-neutrals-2;
+  }
+}
+
+// billing amount 
+.billing-amount__filters {
+  select {
+    height: 32px;
+    margin: 0 10px;
+    padding: 4px 8px;
+    background-color: $c-white;
+    border: $border;
+    border-radius: 8px;
+  }
+}
+
+.billing-amount__heading {
+  margin-bottom: 24px;
+}
+
+.billing-amount__table {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.billing-amount__head,
+.billing-amount__row {
+  display: none;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $c-table-bg;
+  }
+}
+
+.billing-amount__row {
+  display: block;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $c-border;
+  background-color: transparent;
+
+  @media (min-width: 1024px) {
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &:hover {
+    background-color: rgba($c-table-bg, 0.5);
+  }
+}
+
+.billing-amount__column {
+  padding-bottom: 5px;
+  @media (min-width: 1024px) {
+    padding: 12px;
+  }
+
+  .label {
+    color: $c-neutrals;
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &.col-id,
+  &.col-date{
+    @media (min-width: 1024px) {
+      width: 255px;
+    }
+    @media (min-width: 1400px) {
+      width: 355px;
+    }
+  }
+
+  
+  &.col-price {
+    @media (min-width: 1024px) {
+      width: 130px;
+    }
+    @media (min-width: 1400px) {
+      width: 200px;
+    }
+  }
+
+  &.col-details {
+    @media (min-width: 1024px) {
+      width: calc(100% - 655px);
+    }
+    @media (min-width: 1200px) {
+      width: calc(100% - 910px);
+    }
+  }
+}
+
+.billing-amount__head {
+  .billing-amount__column {
+    @include table-cell;
+    @include fw-500;
+    color: $c-neutrals-4;
+  }
+}
+
+.billing-amount__body {
+  .billing-amount__column {
+    @include table-cell;
+    @include fw-700;
+    color: $c-neutrals-2;
+  }
+}
+
+.billing-amount__total-price {
+  margin: 32px 0;
+  .price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1;
+    color: $c-primary; 
+  }
+}

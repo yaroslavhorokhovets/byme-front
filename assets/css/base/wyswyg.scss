@@ -1,0 +1,68 @@
+.ql-editor,
+.wyswyg {
+  background: #FFFFFF;
+
+  @media (min-width: 768px) {
+    border-radius: 24px;
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: $c-primary;
+    margin-bottom: 24px;
+
+    @media (min-width: 1024px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: $c-primary;
+
+    @media (min-width: 1024px) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    margin-bottom: 16px;
+
+    @media (min-width: 1024px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  ul {
+    padding-left: 20px;
+    list-style-type: disc;
+
+    @media (min-width: 768px) {
+      padding-left: 40px;
+    }
+  }
+
+  ol>li>ul>li>ul,
+  ul>li>ul>li>ul {
+    list-style-type: square;
+  }
+
+  ol {
+    padding-left: 20px;
+
+    @media (min-width: 768px) {
+      padding-left: 40px;
+    }
+  }
+
+  ul>li::marker,
+  ol>li::marker {
+    font-weight: bold;
+  }
+}

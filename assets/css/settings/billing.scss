@@ -1,0 +1,244 @@
+.billing__filters {
+  flex-direction: column-reverse;
+  margin-bottom: 48px;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+.billing__filter-date {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  
+  @media (min-width: 1024px) {
+    display: flex;
+    width: calc(100% - 374px);
+    margin: 0 -6px;
+  }
+
+  .form-group {
+    @media (min-width: 1024px) {
+      margin: 0 6px;
+    }
+    
+    input {
+      background-color: transparent;
+    }
+
+    .input-datetime__inner svg {
+      path {
+        fill: $c-second;
+      }
+    }
+  }
+}
+
+.billing__filter-facility-name {
+  width: 100%;
+  border: $border;
+  border-radius: 12px;
+  overflow: hidden;
+
+  @media (min-width: 1024px) {
+    width: 350px;
+    margin-right: 24px
+  }
+  
+  .heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    
+    min-height: 56px;
+    padding: 16px 24px;
+    background-color: $c-neutrals-7;
+    color: $c-neutrals-2;
+    cursor: pointer;
+
+    svg {
+      width: 25px;
+      height: auto;
+    }
+  }
+  
+  .body {
+    max-height: 0px;
+    transition: all 0.25s ease-in-out;
+  }
+
+  &.is-dropdown {
+    .body {
+      max-height: 100%;
+    }
+  }
+  
+  .body__inner {
+    padding: 12px;
+  }
+  
+  .search {
+    margin-bottom: 12px;
+  }
+  
+  .search__input-wrapper {
+    position: relative;
+    width: calc(100% - 52px);
+    margin-right: 12px;
+    
+    svg {
+      position: absolute;
+      top: 9px;
+      left: 12px;
+      width: 24px;
+      height: auto;
+    }
+  }
+  
+  .search__input-el {
+    width: 100%;
+    height: 40px;
+    padding: 8px 20px 8px 44px;
+  }
+  
+  .search__button-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    box-shadow: none;
+    border: $border;
+    border-radius: 10px;
+
+    &:focus {
+      border-color: #80bdff;
+    }
+    
+    svg {
+      width: 24px;
+      height: auto;
+    }
+  }
+
+  .list {
+    padding: 8px;
+  }
+  .pagination__wrapper {
+    display: block;
+  }
+}
+
+.billing__buttons { 
+  margin-bottom: 24px;
+  @media (min-width: 1024px) {
+      margin-bottom: 48px;
+  }
+}
+
+  //----------------------------------
+.billing__table {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.billing__head,
+.billing__row {
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $c-table-bg;
+  }
+}
+
+.billing__row {
+  display: block;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $c-border;
+  background-color: transparent;
+  @media (min-width: 1024px) {
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  &:hover {
+    background-color: rgba($c-table-bg, 0.5);
+  }
+}
+
+.billing__column {
+  width: 100%;
+  padding-bottom: 5px;
+  @media (min-width: 1024px) {
+    width: 140px;
+    padding: 12px;
+    text-align: center;
+  }
+
+  &.col-action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    @media (min-width: 1024px) {
+      width: 140px;
+    }
+  }
+
+  .form-group__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    label:before {
+      margin-right: 0;
+    }
+  }
+}
+
+.billing__head {
+  .billing__column {
+    @include table-cell;
+    @include fw-500;
+    color: $c-neutrals-4;
+  }
+}
+
+.billing__body {
+  .billing__column {
+    @include table-cell;
+    @include fw-700;
+    color: $c-neutrals-2;
+  }
+}
+
+.billing__edit,
+.billing__download {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  svg {
+    width: 24px;
+    height: auto;
+    margin: 0 10px;
+  }
+}
+
+.billing-buttons {
+  margin: 50px 0;
+  
+  button {
+    width: 180px;
+    margin: 0 10px;
+  }
+}

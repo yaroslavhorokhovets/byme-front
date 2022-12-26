@@ -1,0 +1,134 @@
+.usage__filter {
+  flex-direction: column-reverse;
+  margin-bottom: 48px;
+  @media (min-width: 1024px) {
+    flex-direction: row;
+  }
+}
+.usage__filter-date {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  
+  @media (min-width: 1024px) {
+    display: flex;
+    width: calc(100% - 374px);
+    margin: 0 -16px;
+  }
+  
+  .form-group {
+    @media (min-width: 1024px) {
+      width: 50%;
+      margin: 0 16px;
+    }
+  }
+  
+}
+
+.usage__filter-facility-name {
+  width: 100%;
+  border: $border;
+  border-radius: 12px;
+  overflow: hidden;
+
+  @media (min-width: 1024px) {
+    width: 350px;
+    margin-right: 24px
+  }
+  
+  .heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    
+    min-height: 56px;
+    padding: 16px 24px;
+    background-color: $c-neutrals-7;
+    color: $c-neutrals-2;
+    cursor: pointer;
+
+    svg {
+      width: 25px;
+      height: auto;
+      pointer-events: none;
+    }
+  }
+
+  .body {
+    max-height: 0px;
+    transition: all 0.25s ease-in-out;
+  }
+
+  &.is-dropdown {
+    .body {
+      max-height: 100%;
+    }
+  }
+  
+  .body__inner {
+    padding: 12px;
+  }
+  
+  .search {
+    margin-bottom: 12px;
+  }
+  
+  .search__input-wrapper {
+    position: relative;
+    width: calc(100% - 52px);
+    margin-right: 12px;
+    
+    svg {
+      position: absolute;
+      top: 9px;
+      left: 12px;
+      width: 24px;
+      height: auto;
+    }
+  }
+  
+  .search__input-el {
+    width: 100%;
+    height: 40px;
+    padding: 8px 20px 8px 44px;
+  }
+  
+  .search__button-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    box-shadow: none;
+    border: $border;
+    border-radius: 10px;
+
+    &:focus {
+      border-color: #80bdff;
+    }
+    
+    svg {
+      width: 24px;
+      height: auto;
+    }
+  }
+
+  .list {
+    padding: 8px;
+  }
+  
+  .pagination__wrapper {
+    display: block;
+  }
+}
+
+.usage_buttons { 
+  margin-bottom: 24px;
+  @media (min-width: 1024px) {
+      margin-bottom: 48px;
+  }
+}

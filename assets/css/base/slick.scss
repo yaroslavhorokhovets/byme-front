@@ -1,0 +1,54 @@
+.slick-arrow {
+  width: 45px;
+  height: 45px;
+  padding: 1px;
+  border: none;
+  border-radius: 100%;
+  background: linear-gradient(270deg, #FA7AB3 0%, #4CB0E8 100%);
+  color: #737373;
+  overflow: hidden;
+  z-index: 3;
+
+  &:before {
+    display: none;
+  }
+  
+  .slick-arrow__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    background: white;
+  }
+
+  svg {
+    position: initial;
+    width: 14px;
+    height: 14px;
+  }
+
+  &.slick-next {
+    right: 0;
+  }
+
+  &.slick-prev {
+    left: 0;
+  }
+  
+  &.slick-disabled {
+    opacity: 0.5;
+    cursor: auto;
+    pointer-events: none;
+  }
+
+  &.slick-prev:hover,
+  &.slick-prev:focus,
+  &.slick-next:hover,
+  &.slick-next:focus {
+    background: linear-gradient(270deg, #FA7AB3 0%, #4CB0E8 100%);
+    color: #737373;
+  }
+}

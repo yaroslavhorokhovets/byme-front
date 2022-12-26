@@ -1,0 +1,25 @@
+// Font Japan Default
+$font-gothic: "ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", Osaka, "Meiryo",
+"メイリオ", "MS Pゴシック", Arial, Helvetica, Verdana, sans-serif;
+$font-mincho: YuMincho, "游明朝", "游明朝体", "ヒラギノ明朝 ProN",
+"Hiragino Mincho ProN", "Sawarabi Mincho", "Yu Mincho", "ＭＳ 明朝",
+"MS Mincho", "HiraMinProN-W3", "TakaoEx明朝", TakaoExMincho, "MotoyaLCedar",
+"Droid Sans Japanese", serif;
+$font-Yugothic: "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴPro W3",
+"Hiragino Kaku Gothic Pro", Osaka, "Meiryo", "メイリオ", "MS Pゴシック", Arial,
+Helvetica, Verdana, sans-serif;
+$font-notoJp: "Noto Sans JP", "ヒラギノ角ゴPro W6", "Hiragino Kaku Gothic Pro",
+Osaka, "Meiryo", "メイリオ", "MS Pゴシック", Arial, Helvetica, Verdana,
+sans-serif;
+$font-Notoserif: "Noto Serif", YuMincho, "Yu Mincho", "ヒラギノ明朝 ProN",
+"Hiragino Mincho ProN", "游明朝", "游明朝体", "ＭＳ 明朝", "MS Mincho",
+"HiraMinProN-W3", "TakaoEx明朝", TakaoExMincho, "MotoyaLCedar",
+"Droid Sans Japanese", serif;
+$font-Roboto: "Roboto Condensed", "游ゴシック体", "Yu Gothic", YuGothic,
+"ヒラギノ角ゴPro W3", "Hiragino Kaku Gothic Pro", Osaka, "Meiryo", "メイリオ",
+"MS Pゴシック", Arial, Helvetica, Verdana, sans-serif;
+
+$font-basic: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&display=swap');
+$font-m-plus: 'M PLUS 1p', sans-serif;

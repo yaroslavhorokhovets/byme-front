@@ -1,0 +1,46 @@
+.input-datetime-range__start,
+.input-datetime-range__end {
+  margin-bottom: 16px;
+  
+  @media (min-width: 1024px) {
+    margin-bottom: 24px;  
+  }
+
+  label {
+    color: $c-neutrals-4 ;
+  }
+}
+
+.input-datetime-range__start-inner,
+.input-datetime-range__end-inner {
+  position: relative;
+  
+  .form-control:disabled, .form-control[readonly] {
+    background-color: $c-white;
+
+    .is-error & {
+      border-color: $c-red;
+    }
+  }
+  
+  svg {
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+
+    @media (min-width: 1024px) {
+      top: 12px;
+    }
+    
+    path {
+      fill: $c-second;
+      
+      .is-error & {
+        fill: $c-red;
+      }
+    }
+  }
+}

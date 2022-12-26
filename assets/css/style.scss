@@ -1,0 +1,83 @@
+// Base
+//@import 'base/reset';
+@import 'base/fonts';
+@import 'base/variables';
+@import "base/typography";
+
+@import 'base/align';
+@import "base/spacing";
+@import 'base/color';
+@import 'base/loading';
+
+// layout
+@import 'base/container';
+@import 'base/flexbox';
+@import 'base/display';
+@import 'base/width';
+@import 'base/image';
+
+// form
+@import "base/input-slider";
+@import "base/input-text";
+@import "base/input-checkbox";
+@import "base/input-radio";
+@import "base/button";
+@import "base/form";
+
+// plugins
+@import 'base/helper';
+@import 'base/swipper';
+@import 'base/slick';
+@import 'base/tooltip';
+@import "base/wyswyg";
+
+// component
+@import 'base/page-title';
+@import "base/grid";
+@import "base/toastr";
+
+@import 'components/input-datetime-range';
+@import 'components/input-datetime';
+@import 'components/input-time';
+
+@import 'components/popup';
+@import 'components/pagination';
+@import "components/sidebar";
+@import "components/navbar";
+@import "components/report";
+@import "components/total-report";
+@import "components/chart-report";
+
+@import "components/photo-filter";
+
+@import "components/document";
+@import "components/video-guide";
+
+@import "components/breadcrumb";
+
+// page
+@import "page/login";
+@import "page/dashboard";
+@import "page/photo";
+@import "page/study";
+@import "page/help";
+@import "page/settings";
+@import "page/status";
+
+@import "page/shopping";
+@import "page/cart";
+
+@import "page/terms";
+
+
+// page settings
+@import "settings/usage-status";
+@import "settings/notice";
+@import "settings/manual";
+@import "settings/tutorial-video";
+@import "settings/billing";
+@import "settings/new-registration";
+@import "settings/account-information";
+
+// Other
+@import "page/style-guide";

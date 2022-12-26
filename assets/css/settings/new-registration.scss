@@ -1,0 +1,109 @@
+.new-registration__form {
+  width: 100%;
+  
+  @media (min-width: 1024px) {
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  .form-label {
+    @media (min-width: 1024px) {
+      width: 200px;
+      margin-right: 24px;
+    }
+  }
+  .form-value {
+    @media (min-width: 1024px) {
+      width: calc(100% - 224px);
+    }
+    
+    select,
+    input {
+      background-color: transparent;
+    }
+  }
+  
+  .form-value--select {
+    position: relative;
+    
+    select {
+      padding: 0 25px 0 12px;
+      background-color: transparent;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      &:active,
+      &:focus {
+        outline: none;
+      }
+    }
+    
+    &:after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      margin-top: -2px;
+      right: 15px;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid $c-black;
+      
+      @media (min-width: 1024px) {
+        top: 25px;
+      }
+    }
+  }
+  
+  .form-group__price {
+    @media (min-width: 1024px) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    .form-label {
+      @media (min-width: 1024px) {
+        width: 200px;
+        margin-right: 24px;
+      }
+    }
+
+    .form-group {
+      @media (min-width: 1024px) {
+        display: block;
+        width: calc(100% - 224px);
+      }
+    }
+    
+    .form-value {
+      @media (min-width: 1024px) {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 -6px;
+      }
+      
+      .group {
+        margin-bottom: 1rem;
+        @media (min-width: 1024px) {
+          width: calc(100% / 3);
+          margin: 0 6px;
+        }
+      }
+    }
+  }
+
+  .form-control:disabled, .form-control[readonly] {
+    background-color: $c-disabled;
+  }
+}

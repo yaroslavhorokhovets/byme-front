@@ -1,0 +1,28 @@
+.border--b {
+  border-bottom: 1px solid #000000;
+}
+
+.hide {
+  display: none;
+}
+
+.hide-mobile {
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+  }
+}
+
+.hide-desktop {
+  display: flex;
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.width-100 {
+  width: 100%;
+}
+.height-100 {
+  height: 100%;
+}
